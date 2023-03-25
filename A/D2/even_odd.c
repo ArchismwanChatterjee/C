@@ -16,7 +16,6 @@ int main() {
     return 0;
 }
 /*
-ENTER ANY NUMBER BETWEEN 1 TO 10
-4
-EVEN
+Enter a number: 4
+4 is even
 */
