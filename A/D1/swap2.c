@@ -14,6 +14,8 @@ int main()
 
     printf("First Number : %f\n",a);
     printf("Second Number : %f\n",b);
+    
+    return 0;
 }
 /*
 Enter two numbers to swap:
