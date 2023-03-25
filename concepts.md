@@ -1,8 +1,11 @@
 ## Loops
 1. For approaching pattern problems always remember that the outermost loop (i) represents the rows iteration
 2. While the inner loops(j,...) represents the space iteration and column iteration depending upon the requirements of the problem
-3. Prefix means allocation in memory first and then access the value of the variable
-4. Postfix means first access the value pf the variable then allocation in memory
+
+## Postfix & Prefix Operators
+1.Prefix means allocation in memory first and then access the value of the variable
+
+2.Postfix means first access the value pf the variable then allocation in memory
 
 For example:
 
