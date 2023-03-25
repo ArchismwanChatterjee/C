@@ -10,9 +10,8 @@
 // So:
 // 1+125+27=153
 #include <stdio.h>
-#include <math.h>
 int main (){
-    int num,temp, rem=1, power=0,n,sum=0;
+    int num,temp,p=1, rem, power=0,n,sum=0;
     printf("enter upto which term we should print the amstrong number:\n");
     scanf("%d",&n);
     for(num=0;num<=n;num++){
@@ -24,9 +23,14 @@ int main (){
         power++;
     }
     temp=num;
+    
         while(temp!=0){
             rem=temp%10;
-            sum=sum+pow(rem,power);
+            p=1;
+            for(int i=0;i<power;i++){
+                p *=rem;
+            }
+            sum=sum+p;
             temp=temp/10;
         }
 
@@ -39,4 +43,4 @@ int main (){
 }
 /*enter upto which term we should print thw amstrong number:
 10000
-0,1,2,3,4,5,6,7,8,9,370,371,407,1634,8208,9474,*/
+0,1,2,3,4,5,6,7,8,9,153,370,371,407,1634,8208,9474,*/
