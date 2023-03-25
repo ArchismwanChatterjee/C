@@ -16,7 +16,7 @@ To get a copy of these programs up and running on your local machine, simply clo
 ```bash
 git clone https://github.com/ArchismwanChatterjee/C
 ```
-
+[if you are scared of CLI don't worry we got you covered](https://www.youtube.com/watch?v=PvUexC0-D2s)
 ## Prerequisites
 
 You will need the following tools installed on your system to run these programs:
