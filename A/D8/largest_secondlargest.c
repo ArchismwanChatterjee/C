@@ -1,0 +1,1 @@
+// Write a program in C to find largest and second largest elements from an array of n numbers
