@@ -1,0 +1,1 @@
+// Write a C program to create Simple Calculator using switch case.
