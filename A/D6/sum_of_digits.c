@@ -1,0 +1,1 @@
+// Write a program in C to calculate the sum of digits of a number.

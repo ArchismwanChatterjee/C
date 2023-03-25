@@ -1,0 +1,1 @@
+// Write a program in C to print all prime numbers between 1 and N.

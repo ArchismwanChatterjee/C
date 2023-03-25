@@ -1,0 +1,1 @@
+// Write a program in C to print largest of two numbers using ternary operator.

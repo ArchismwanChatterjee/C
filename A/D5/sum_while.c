@@ -1,0 +1,1 @@
+// Write a program in C to display first n natural numbers and their sumusing while loop

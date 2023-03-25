@@ -1,0 +1,1 @@
+// Write a program in C to determine whether a number is prime or not.
