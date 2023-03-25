@@ -1,0 +1,1 @@
+// Write a program in C to insert an element in a sorted array.

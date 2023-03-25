@@ -1,0 +1,1 @@
+// Write a program in C to calculate sum and average of elements present in an array.
