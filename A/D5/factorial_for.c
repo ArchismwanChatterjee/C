@@ -1,4 +1,4 @@
-// Write a program in C to calculate factorial of a given number(using for loop and while loop and do-while loop).
+// Write a program in C to calculate factorial of a given number using for loop.
 
 #include <stdio.h>
 int main()
@@ -7,20 +7,20 @@ int main()
     printf("Enter the number whose factorial is to be found\n");
     scanf("%d", &n);
 
+    //handling cases when n is negative or 0
+    if(n<0){
+        printf("Factorial can't be found for negative numbers\n");
+        return 0;
+    }
+    if(n==0){
+        printf("FACTORIAL : 1");
+        return 0;
+    }
+
     for (int i = 1; i <= n; i++)
     {
         fact = fact * i;
     }
-
-    // while (n > 0)
-    // {
-    //     fact = fact * n--;
-    // }
-
-    // do
-    // {
-    //     fact = fact * n;
-    // } while (--n > 0);
 
     printf("FACTORIAL : %d", fact);
 

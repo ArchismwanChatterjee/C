@@ -4,14 +4,14 @@
 #include <stdio.h>
 int main()
 {
-    int n, sum = 0;
+    int n, sum = 0,nTerm;//stores the term at nTH position.
     printf("Enter the number of terms:\n");
     scanf("%d", &n);
+    nTerm=n*2-1;
 
-    for (int i = 1; i <= n; i++)
+    for (int i = 1; i <= nTerm; i+=2)
     {
-        int x = i * 2 - 1; // Ith term in the series.
-        sum = sum + x;
+        sum = sum + i;
     }
     printf("SUM : %d", sum);
 

@@ -4,14 +4,15 @@
 #include <stdio.h>
 int main()
 {
-    int n, sum = 0;
+    int n, sum = 0,sign=1;//stores the sign of the current term. alternates each iteration between 1 and -1;
     printf("Enter the number of terms:\n");
     scanf("%d", &n);
 
     for (int i = 1; i <= n; i++)
     {
-        int x = i * ((i % 2) * 2 - 1); // Ith term in the series.positive for odd term, negative for even term.
+        int x = i*sign;
         sum = sum + x;
+        sign=-sign;//changing sign after each iteration.
     }
     printf("SUM : %d", sum);
 
