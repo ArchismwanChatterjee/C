@@ -5,7 +5,7 @@
 ## Postfix & Prefix Operators
 1.Prefix means allocation in memory first and then access the value of the variable
 
-2.Postfix means first access the value pf the variable then allocation in memory
+2.Postfix means first access the value of the variable then allocation in memory
 
 For example:
 
