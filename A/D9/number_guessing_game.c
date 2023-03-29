@@ -94,3 +94,41 @@ int main()
 
     return 0;
 }
+
+/*
+Generating a Random Number!...
+Random Number Genarated!...
+You have 5 Attempts to find the number.
+
+Enter your guess[A 4 digit number]
+1234
+Result:[x->not present , *->present , _->proper position]
+1 2 3 4
+x * _ x
+
+Incorrect Guess...4 Attempts left!
+
+Enter your guess[A 4 digit number]
+5678
+Result:[x->not present , *->present , _->proper position]
+5 6 7 8
+x _ x x
+
+Incorrect Guess...3 Attempts left!
+
+Enter your guess[A 4 digit number]
+2906
+Result:[x->not present , *->present , _->proper position]
+2 9 0 6
+* * x *
+
+Incorrect Guess...2 Attempts left!
+
+Enter your guess[A 4 digit number]
+9632
+Result:[x->not present , *->present , _->proper position]
+9 6 3 2
+_ _ _ _
+
+Congratulation! You guessed the number!
+*/
