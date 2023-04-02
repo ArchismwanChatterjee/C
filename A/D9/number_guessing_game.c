@@ -1,13 +1,12 @@
+
 // Write a C program to implement the Number Guessing Game. In this game the
 // computer has saved a four digit number. the player tries to guess the number in
 // maximum 5 few attempts. Each time the player enters a guess, the computer
 // tells him how many correct digits he/she has entered and in proper position.
 // Once the player guesses the number, the game is over.
 // As for example: if the original number is 4321 and player guesses 1304 then
-// Result will be shown below the guess as,
-// 1 3 0 4
-//* _ x *   where * represents the number is present but not in that position,
-//_ represents that it is present in correct position and x means it's not present.
+// computer will answer three digits(1,3,4) are correct and one digit (3) is in
+// proper position.
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -18,16 +17,14 @@ int main()
 {
     int num[4], attempts = 5, guess[4];
     char result[4];
+    int correct, inPlace;
 
     // generating a random number.
     printf("Generating a Random Number!...\n");
     srand(time(0));
     int temp = rand();
-    temp = ((temp >> 16) ^ temp) * 0x119de1f3;
-    temp = ((temp >> 16) ^ temp) * 0x119de1f3;
-    temp = (temp >> 16) ^ temp;
     temp = abs(temp);
-    temp = temp % 8999 + 1000;
+    temp = temp % 9000 + 1000;
     printf("Random Number Genarated!...\n");
     printf("You have %d Attempts to find the number.\n", attempts);
 
@@ -55,12 +52,14 @@ int main()
             temp /= 10;
         }
 
-        for (int i = 0; i < 4; i++) // naking result empty.
-        {
-            result[i] = 'x';
-        }
+        //making result empty
+        result[0] = 'x';
+        result[1] = 'x';
+        result[2] = 'x';
+        result[3] = 'x';
 
-        int correct = 0;
+        correct = 0;
+        inPlace = 0;
         for (int i = 0; i < 4; i++) // filling result
         {
             for (int j = 0; j < 4; j++)
@@ -70,18 +69,22 @@ int main()
                     if (i == j)
                     {
                         result[i] = '_';
-                        correct++;
+                        inPlace++;
                         break;
                     }
-                    else
+                    else{
+                        if(result[i]!='*')
+                            correct++;
                         result[i] = '*';
+                    }
                 }
             }
         }
 
+        printf("\n%d numbers are correct and %d numbers are in correct position\n",correct,inPlace);
         printf("Result:[x->not present , *->present , _->proper position]\n");
         printf("%d %d %d %d\n%c %c %c %c\n", guess[0], guess[1], guess[2], guess[3], result[0], result[1], result[2], result[3]);
-        if (correct == 4)
+        if (inPlace == 4)
         {
             printf("\nCongratulation! You guessed the number!");
             return 0;
@@ -102,33 +105,53 @@ You have 5 Attempts to find the number.
 
 Enter your guess[A 4 digit number]
 1234
+
+2 numbers are correct and 0 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
 1 2 3 4
-x * _ x
+* x * x
 
 Incorrect Guess...4 Attempts left!
 
 Enter your guess[A 4 digit number]
 5678
+
+1 numbers are correct and 0 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
 5 6 7 8
-x _ x x
+x x x *
 
 Incorrect Guess...3 Attempts left!
 
 Enter your guess[A 4 digit number]
-2906
+9013
+
+3 numbers are correct and 0 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
-2 9 0 6
-* * x *
+9 0 1 3
+x * * *
 
 Incorrect Guess...2 Attempts left!
 
 Enter your guess[A 4 digit number]
-9632
-Result:[x->not present , *->present , _->proper position]
-9 6 3 2
-_ _ _ _
+0183
+Invalid input, enter a 4 digit number
 
-Congratulation! You guessed the number!
+Enter your guess[A 4 digit number]
+3801
+
+3 numbers are correct and 1 numbers are in correct position
+Result:[x->not present , *->present , _->proper position]
+3 8 0 1
+_ * * *
+
+Incorrect Guess...1 Attempts left!
+
+Enter your guess[A 4 digit number]
+3180
+
+0 numbers are correct and 4 numbers are in correct position
+Result:[x->not present , *->present , _->proper position]
+3 1 8 0
+_ _ _ _
 */
