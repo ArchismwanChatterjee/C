@@ -106,52 +106,40 @@ You have 5 Attempts to find the number.
 Enter your guess[A 4 digit number]
 1234
 
-2 numbers are correct and 0 numbers are in correct position
+0 numbers are correct and 1 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
 1 2 3 4
-* x * x
+_ x x x
 
 Incorrect Guess...4 Attempts left!
 
 Enter your guess[A 4 digit number]
-5678
+4567
 
 1 numbers are correct and 0 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
-5 6 7 8
+4 5 6 7
 x x x *
 
 Incorrect Guess...3 Attempts left!
 
 Enter your guess[A 4 digit number]
-9013
+7890
 
-3 numbers are correct and 0 numbers are in correct position
+1 numbers are correct and 1 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
-9 0 1 3
-x * * *
+7 8 9 0
+* x _ x
 
 Incorrect Guess...2 Attempts left!
 
 Enter your guess[A 4 digit number]
-0183
-Invalid input, enter a 4 digit number
+1791
 
-Enter your guess[A 4 digit number]
-3801
-
-3 numbers are correct and 1 numbers are in correct position
+1 numbers are correct and 4 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
-3 8 0 1
-_ * * *
-
-Incorrect Guess...1 Attempts left!
-
-Enter your guess[A 4 digit number]
-3180
-
-0 numbers are correct and 4 numbers are in correct position
-Result:[x->not present , *->present , _->proper position]
-3 1 8 0
+1 7 9 1
 _ _ _ _
+
+Congratulation! You guessed the number!
 */
