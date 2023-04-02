@@ -26,32 +26,28 @@ int main()
     for (i = 0; i < n2; i++)
         scanf("%d", &arr2[i]);
 
-    // merging
+    // merging[O(n) solution]
     m = n1 + n2;
     int arr3[m];
-    for (i = 0; i < n1; i++)
+    i = 0;
+    j = 0;
+    int k = 0;
+
+    while (i < n1 && j < n2) // always picking the lowest element from the front of both arrays till one of the arrays is empty.
     {
-        arr3[pos] = arr1[i];
-        pos++;
+        if (arr1[i] < arr2[j])
+            arr3[k++] = arr1[i++];
+        else
+            arr3[k++] = arr2[j++];
     }
-    for (i = 0; i < n2; i++)
-    {
-        arr3[pos] = arr2[i];
-        pos++;
-    }
-    for (i = 0; i < m; i++)
-    {
-        for (j = i + 1; j < m; j++)
-        {
-            if (arr3[j] < arr3[i])
-            {
-                temp = arr3[i];
-                arr3[i] = arr3[j];
-                arr3[j] = temp;
-            }
-        }
-    }
-    printf("sorted Merged array is\n");
+    // putting the remaining elements in the merged array if present.
+    while (i < n1) // if first array has leftover elements
+        arr3[k++] = arr1[i++];
+
+    while (j < n2) // if second array has leftover elements.
+        arr3[k++] = arr2[j++];
+
+    printf("\nSorted Merged array is:\n");
     for (i = 0; i < m; i++)
         printf("%d ", arr3[i]);
 
@@ -74,5 +70,7 @@ Enter elements in second sorted array
 33
 44
 58
-sorted Merged array is
-7 15 18 22 27 30 31 32 33 44 58*/
+
+Sorted Merged array is:
+7 15 18 22 27 30 31 32 33 44 58
+*/
