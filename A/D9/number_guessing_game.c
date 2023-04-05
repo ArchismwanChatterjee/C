@@ -91,7 +91,7 @@ ENTER THE NUMBER:
 1 of the digits (1) are correct and 1 of the digits (1) is in proper position.
 
 ENTER THE NUMBER:
-1189
+1589
 
 1 of the digits (1) are correct and 1 of the digits (1) is in proper position.
 
