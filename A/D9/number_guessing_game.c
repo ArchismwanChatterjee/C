@@ -10,15 +10,26 @@
 #include <time.h>
 #include <stdlib.h>
 int main (){
-    int digit[4],guess[4],num,i,j,k,digit1[4],pos[4],possize=0,right[4],rightsize;
+    int digit[4],guess[4],num,flag,i,j,k,digit1[4],pos[4],possize=0,right[4],rightsize;
     srand(time(NULL));
-    for(i=0;i<5;i++){
-        digit[i]=rand() % 9 + 0;
-    }
+    
+    digit[0]=digit[i]=rand() % 9 + 1;
+    digit[1]=digit[i]=rand() % 9 + 0;
+    digit[2]=digit[i]=rand() % 9 + 0;
+    digit[3]=digit[i]=rand() % 9 + 0;
     
     for(i=0;i<5;i++){
+               flag=0;
+        while(flag == 0){
         printf("\nENTER THE NUMBER:\n");
         scanf("%d",&num);
+        if(num<=1000 || num>=9999){
+            printf("Invalid input enter 4 digit number");
+            continue;
+        }else{
+            flag=1;
+        }
+        }
         j=3;
         while(num!=0){
             guess[j]=num%10;
