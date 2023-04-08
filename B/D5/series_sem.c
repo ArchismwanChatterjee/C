@@ -25,4 +25,5 @@ int main()
 Enter number of terms
 3
 The sum is 2
+     
 */
