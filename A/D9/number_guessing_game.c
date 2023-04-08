@@ -14,9 +14,9 @@ int main (){
     srand(time(NULL));
     
     digit[0]=digit[i]=rand() % 9 + 1;
-    digit[1]=digit[i]=rand() % 9 + 0;
-    digit[2]=digit[i]=rand() % 9 + 0;
-    digit[3]=digit[i]=rand() % 9 + 0;
+    digit[1]=digit[i]=rand() % 10;
+    digit[2]=digit[i]=rand() % 10;
+    digit[3]=digit[i]=rand() % 10;
     
     for(i=0;i<5;i++){
                flag=0;
