@@ -68,6 +68,8 @@ int main()
                 {
                     if (i == j)
                     {
+                        if(result[i]=='*')
+                            correct--;
                         result[i] = '_';
                         inPlace++;
                         break;
@@ -81,7 +83,7 @@ int main()
             }
         }
 
-        printf("\n%d numbers are correct and %d numbers are in correct position\n",correct,inPlace);
+        printf("\n%d numbers are correct and %d numbers are in correct position\n",correct+inPlace,inPlace);
         printf("Result:[x->not present , *->present , _->proper position]\n");
         printf("%d %d %d %d\n%c %c %c %c\n", guess[0], guess[1], guess[2], guess[3], result[0], result[1], result[2], result[3]);
         if (inPlace == 4)
@@ -106,39 +108,49 @@ You have 5 Attempts to find the number.
 Enter your guess[A 4 digit number]
 1234
 
-0 numbers are correct and 1 numbers are in correct position
+1 numbers are correct and 0 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
 1 2 3 4
-_ x x x
+x * x x
 
 Incorrect Guess...4 Attempts left!
 
 Enter your guess[A 4 digit number]
-4567
+5678
 
 1 numbers are correct and 0 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
-4 5 6 7
-x x x *
+5 6 7 8
+* x x x
 
 Incorrect Guess...3 Attempts left!
 
 Enter your guess[A 4 digit number]
-7890
+9025
 
-1 numbers are correct and 1 numbers are in correct position
+4 numbers are correct and 1 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
-7 8 9 0
-* x _ x
+9 0 2 5
+* x _ *
 
 Incorrect Guess...2 Attempts left!
 
 Enter your guess[A 4 digit number]
-1791
+5952
 
-1 numbers are correct and 4 numbers are in correct position
+4 numbers are correct and 0 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
-1 7 9 1
+5 9 5 2
+* * * *
+
+Incorrect Guess...1 Attempts left!
+
+Enter your guess[A 4 digit number]
+2529
+
+5 numbers are correct and 4 numbers are in correct position
+Result:[x->not present , *->present , _->proper position]
+2 5 2 9
 _ _ _ _
 
 Congratulation! You guessed the number!
