@@ -108,49 +108,39 @@ You have 5 Attempts to find the number.
 Enter your guess[A 4 digit number]
 1234
 
-1 numbers are correct and 0 numbers are in correct position
+3 numbers are correct and 1 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
 1 2 3 4
-x * x x
+_ x * *
 
 Incorrect Guess...4 Attempts left!
 
 Enter your guess[A 4 digit number]
 5678
 
-1 numbers are correct and 0 numbers are in correct position
+0 numbers are correct and 0 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
 5 6 7 8
-* x x x
+x x x x
 
 Incorrect Guess...3 Attempts left!
 
 Enter your guess[A 4 digit number]
-9025
+9043
 
-4 numbers are correct and 1 numbers are in correct position
+2 numbers are correct and 2 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
-9 0 2 5
-* x _ *
+9 0 4 3
+x x _ _
 
 Incorrect Guess...2 Attempts left!
 
 Enter your guess[A 4 digit number]
-5952
+1143
 
-4 numbers are correct and 0 numbers are in correct position
+4 numbers are correct and 4 numbers are in correct position
 Result:[x->not present , *->present , _->proper position]
-5 9 5 2
-* * * *
-
-Incorrect Guess...1 Attempts left!
-
-Enter your guess[A 4 digit number]
-2529
-
-5 numbers are correct and 4 numbers are in correct position
-Result:[x->not present , *->present , _->proper position]
-2 5 2 9
+1 1 4 3
 _ _ _ _
 
 Congratulation! You guessed the number!
