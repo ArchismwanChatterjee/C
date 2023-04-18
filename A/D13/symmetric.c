@@ -52,3 +52,12 @@ int main()
 
     return 0;
 }
+/*Output:
+Enter the size of the square matrix: 4
+Enter the elements of the matrix:
+
+1 2 3 4
+2 4 5 7
+5 9 2 3
+5 4 3 2
+The matrix is not symmetric.*/
