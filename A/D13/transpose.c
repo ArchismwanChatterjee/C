@@ -53,15 +53,9 @@ int main()
 /*output:
 Enter the number of rows and columns of the matrix: 3 3
 Enter the matrix elements:
-1
-2
-3
-4
-5
-6
-7
-8
-9
+1 2 3
+4 5 6
+7 8 9
 The matrix is:
 1 2 3
 4 5 6
