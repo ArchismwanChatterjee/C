@@ -2,6 +2,8 @@
 # ES-CS201/291 Programs
 
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=flat-square)](https://makeapullrequest.com)
+![License](https://badgen.net/github/license/micromatch/micromatch)
+
 
 This repository contains programs for ES-CS201 and ES-CS291 under MAKAUT.
 All programs must follow the syllabus given below (as of 2023).
