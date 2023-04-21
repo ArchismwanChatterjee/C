@@ -1,0 +1,1 @@
+// Write a c program to find whether two strings are the same or not

@@ -1,0 +1,1 @@
+// Write a c program to count no. of characters in a string
