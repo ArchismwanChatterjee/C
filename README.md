@@ -6,7 +6,7 @@
 
 
 This repository contains programs for ES-CS201 and ES-CS291 under MAKAUT.
-All programs must follow the syllabus given below (as of 2023).
+All programs must follow the syllabus  given below (as of 2023).
 
 
 ## Syllabus
