@@ -1,0 +1,1 @@
+// Write a C Program to covert the given string “GOOD MORNING” to “good morning”.

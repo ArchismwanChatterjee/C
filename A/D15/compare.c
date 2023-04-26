@@ -1,0 +1,1 @@
+// Write a C Program to compare two strings without using any library function.

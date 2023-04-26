@@ -1,0 +1,1 @@
+// Write a program in C to read and print the names of n students of a class.
