@@ -1,7 +1,7 @@
 // Read full name of any person (say, Sagarika Sen) and perform the following:
-// a) Greet the person with &quot;Hello&quot;. (i.e., Output is: Hello Sagarika Sen )
-// b) Greet the person with &quot;Hello&quot; and her first name. (i.e., Output is: Hello Sagarika )
-// c) Greet the person with &quot;Hello&quot; and her last name. (i.e., Output is: Hello Ms. Sen )
+// a) Greet the person with "Hello". (i.e., Output is: Hello Sagarika Sen )
+// b) Greet the person with "Hello" and her first name. (i.e., Output is: Hello Sagarika )
+// c) Greet the person with "Hello" and her last name. (i.e., Output is: Hello Ms. Sen )
 // Note : Here Hello will be stored in one string and person’s name will be stored in
 //        another string.You may use
 //        gets(str_name) to read a string having blank space.
