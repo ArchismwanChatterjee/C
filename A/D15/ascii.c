@@ -12,15 +12,15 @@ int main()
     while (1)
     {
         printf("\tPAGE : %d\n", page);
-        for (int i = 0; i < 25 && index < 128; i++)
+        for (int i = 0; i < 25 && index < 256; i++)
         {
             printf("%d: %c\n", index, index);
             index++;
         }
-        printf("\n\nEnter any key to continue,X to exit");
+        printf("\n\nEnter any key to continue,X to exit\n");
         if (getch() == 'x')
             break;
-        if (!(index < 128))
+        if (!(index < 256))
             break;
         page++;
     }
@@ -28,22 +28,25 @@ int main()
 }
 /*
         PAGE : 1
-0: 
+0:
 1: ☺
 2: ☻
 3: ♥
 4: ♦
 5: ♣
 6: ♠
-7: 
-8: 
-9: 
-10: 
-11: 
-12: 
-13: 
-14: 
-15: 
+7:
+8:
+9:
+10:
+
+11:
+
+12:
+
+13:
+14:
+15:
 16: ►
 17: ◄
 18: ↕
@@ -56,15 +59,16 @@ int main()
 
 
 Enter any key to continue,X to exit
-     PAGE : 2
+        PAGE : 2
 25: ↓
 26: →
-27: 
+27:
+
 8: ∟
 29: ↔
 30: ▲
 31: ▼
-32:  
+32:
 33: !
 34: "
 35: #
@@ -84,7 +88,8 @@ Enter any key to continue,X to exit
 49: 1
 
 
-Enter any key to continue,X to exit     PAGE : 3
+Enter any key to continue,X to exit
+        PAGE : 3
 50: 2
 51: 3
 52: 4
@@ -112,7 +117,8 @@ Enter any key to continue,X to exit     PAGE : 3
 74: J
 
 
-Enter any key to continue,X to exit     PAGE : 4
+Enter any key to continue,X to exit
+        PAGE : 4
 75: K
 76: L
 77: M
@@ -140,7 +146,8 @@ Enter any key to continue,X to exit     PAGE : 4
 99: c
 
 
-Enter any key to continue,X to exit     PAGE : 5
+Enter any key to continue,X to exit
+        PAGE : 5
 100: d
 101: e
 102: f
@@ -168,13 +175,163 @@ Enter any key to continue,X to exit     PAGE : 5
 124: |
 
 
-Enter any key to continue,X to exit     PAGE : 6
+Enter any key to continue,X to exit
+        PAGE : 6
 125: }
 126: ~
 127:
+128: Ç
+129: ü
+130: é
+131: â
+132: ä
+133: à
+134: å
+135: ç
+136: ê
+137: ë
+138: è
+139: ï
+140: î
+141: ì
+142: Ä
+143: Å
+144: É
+145: æ
+146: Æ
+147: ô
+148: ö
+149: ò
+
+
+Enter any key to continue,X to exit
+        PAGE : 7
+150: û
+151: ù
+152: ÿ
+153: Ö
+154: Ü
+155: ¢
+156: £
+157: ¥
+158: ₧
+159: ƒ
+160: á
+161: í
+162: ó
+163: ú
+164: ñ
+165: Ñ
+166: ª
+167: º
+168: ¿
+169: ⌐
+170: ¬
+171: ½
+172: ¼
+173: ¡
+174: «
+
+
+Enter any key to continue,X to exit
+        PAGE : 8
+175: »
+176: ░
+177: ▒
+178: ▓
+179: │
+180: ┤
+181: ╡
+182: ╢
+183: ╖
+184: ╕
+185: ╣
+186: ║
+187: ╗
+188: ╝
+189: ╜
+190: ╛
+191: ┐
+192: └
+193: ┴
+194: ┬
+195: ├
+196: ─
+197: ┼
+198: ╞
+199: ╟
+
+
+Enter any key to continue,X to exit
+        PAGE : 9
+200: ╚
+201: ╔
+202: ╩
+203: ╦
+204: ╠
+205: ═
+206: ╬
+207: ╧
+208: ╨
+209: ╤
+210: ╥
+211: ╙
+212: ╘
+213: ╒
+214: ╓
+215: ╫
+216: ╪
+217: ┘
+218: ┌
+219: █
+220: ▄
+221: ▌
+222: ▐
+223: ▀
+224: α
+
+
+Enter any key to continue,X to exit
+        PAGE : 10
+225: ß
+226: Γ
+227: π
+228: Σ
+229: σ
+230: µ
+231: τ
+232: Φ
+233: Θ
+234: Ω
+235: δ
+236: ∞
+237: φ
+238: ε
+239: ∩
+240: ≡
+241: ±
+242: ≥
+243: ≤
+244: ⌠
+245: ⌡
+246: ÷
+247: ≈
+248: °
+249: ∙
+
+
+Enter any key to continue,X to exit
+        PAGE : 11
+250: ·
+251: √
+252: ⁿ
+253: ²
+254: ■
+255:  
 
 
 Enter any key to continue,X to exit
 
+
  Ended printing characters
-*/
+ */
