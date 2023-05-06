@@ -1,6 +1,7 @@
-Write a program in C to calculate C(n, r) using function;
+//  Write a program in C to calculate C(n, r) using function;
 #include <stdio.h>
 int fact();
+int C();
 
 int main()
 {
@@ -25,3 +26,8 @@ int C(int n, int r)
 {
     return fact(n) / fact(r) * fact(n - r);
 }
+/*
+Enter the values of n and r
+7 5
+7C5 = 84
+*/
