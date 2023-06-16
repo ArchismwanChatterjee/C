@@ -5,6 +5,18 @@
 
 int main()
 {
-
+    int a, n, sum = 0;
+    printf("Enter n : ");
+    scanf("%d", &n);
+    for (a = 1; a <= n; a++)
+    {
+        sum += a * a;
+    }
+    printf("\n The Sum is %d", sum);
     return 0;
 }
+/*
+OUTPUT
+Enter n : 5
+The Sum is 14
+*/
