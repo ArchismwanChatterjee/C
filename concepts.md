@@ -25,4 +25,3 @@ postfix: uses 6 first and the value becomes 7 in the memory and uses 7
 
 thus 7+6=13
 ```
-         
