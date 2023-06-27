@@ -25,3 +25,23 @@ postfix: uses 6 first and the value becomes 7 in the memory and uses 7
 
 thus 7+6=13
 ```
+
+## Strings
+In C, strings are nothing but a character array with null terminator('\0')
+
+1. To input only word we use any one of the following 
+```C
+gets(string_name);
+```
+or 
+```C
+scanf("%s",string_name);
+```
+2. To input multiple words we use
+```C
+scanf("%[^\n]s", str);
+```
+![download](https://github.com/ArchismwanChatterjee/C/assets/115975340/4762c90d-8487-4edf-83c0-7c37d64e4621)
+
+Basic visualisation of a string during memory allocation
+
