@@ -11,8 +11,7 @@ All programs must follow the syllabus  given below (as of 2023).
 
 ## Syllabus
 
-![App Screenshot](https://s3.us-west-2.amazonaws.com/secure.notion-static.com/bde41f5f-d10b-41f2-8416-735b617bb3f2/Untitled.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Content-Sha256=UNSIGNED-PAYLOAD&X-Amz-Credential=AKIAT73L2G45EIPT3X45%2F20230325%2Fus-west-2%2Fs3%2Faws4_request&X-Amz-Date=20230325T052245Z&X-Amz-Expires=86400&X-Amz-Signature=908c05ae113a34dabaf85bbfffa2ba2907eef391636d55ac338d69a3bfec86a1&X-Amz-SignedHeaders=host&response-content-disposition=filename%3D%22Untitled.png%22&x-id=GetObject)
-
+![Sy](https://github.com/ArchismwanChatterjee/C/assets/115975340/9590bfc1-2d05-4cf8-a4f4-a87342b58ee2)
 
 ## Getting started
 
