@@ -1,4 +1,9 @@
-// WAP to read any string from the user in uppercase and encrypt the string by shifting each alphabet x(<256) places. If the alphabet is Z and x is 3 then it would be ] but make it in a way so that it gives C. This is CaesarCipher Algorithm
+/*
+WAP to read any string/message from the user in uppercase
+Encrypt the string by shifting each alphabet x(<256) places.
+If the alphabet is 'Z' and x is 3 then it would be ']' but make it in a way so that it gives 'C'.
+This is CaesarCipher Algorithm
+*/
 
 #include <stdio.h>
 #include <string.h>
